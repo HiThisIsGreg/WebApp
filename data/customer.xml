@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<customers>
+  <customer>
+    <customerID>9724605</customerID>
+    <password>testpass</password>
+    <firstName>Greg</firstName>
+    <surName>Marusic</surName>
+    <email>test@gmail.com</email>
+  </customer>
+</customers>

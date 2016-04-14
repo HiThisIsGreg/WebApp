@@ -1,0 +1,36 @@
+<!-- Description: Maintenance Form -->
+<!-- Author: Greg Marusic -->
+<!-- Date: 10/05/2015 -->
+
+
+<html>
+	<head>
+		<title>Deals online</title>
+		<!-- style.css is the only main stylesheet for all pages as all pages conform to a similar theme -->
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 id="header">ShopOnline</h1>
+		<!--Navigational Menu -->
+		<!-- Has Log Out Link excluding login and registration page -->
+		<div class="nav" id="navigation">
+			<ul>
+				<li><a href="login.htm">Home</a></li>
+				<li><a href="listing.htm">Listing</a></li>
+				<li><a href="bidding.htm">Bidding</a></li>
+				<li><a href="maintenance.htm">Maintenance</a></li>
+				<li><a href="logout.htm">Log Out</a></li>
+			</ul>
+		</div>
+		
+		<h2>Maintenance</h2>
+		<div id="message"></div>
+		<div id="displayReport"></div>
+		<form>
+			<input type="button" name="processBtn" id="processBtn" class="goldBtn" value="Process Auction Items"/>
+			<input type="button" name="generateBtn" id="generateBtn" class="blueBtn" value="Generate Report"/>
+		</form>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="maintenance.js"></script>
+	</body>
+</html>

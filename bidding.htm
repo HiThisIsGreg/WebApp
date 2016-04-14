@@ -1,0 +1,37 @@
+<!-- Description: Bidding Form -->
+<!-- Author: Greg Marusic -->
+<!-- Date: 10/05/2015 -->
+
+<html>
+	<head>
+		<title>Deals online</title>
+		<!-- style.css is the only main stylesheet for all pages as all pages conform to a similar theme -->
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 id="header">ShopOnline</h1>
+		<!--Navigational Menu -->
+		<!-- Has Log Out Link excluding login and registration page -->
+		<div class="nav" id="navigation">
+			<ul>
+				<li><a href="login.htm">Home</a></li>
+				<li><a href="listing.htm">Listing</a></li>
+				<li><a href="bidding.htm">Bidding</a></li>
+				<li><a href="maintenance.htm">Maintenance</a></li>
+			</ul>
+		</div>
+		
+		<h2>Current Auction</h2>
+		
+		<p>Current auction items are listed below. To place a bid for an item, use the Place Bid button</p>
+		
+		<p><strong>NOTE: </strong> Item remaining time and current bid prices are updated every 5 seconds</p>
+		<!-- div for displaying messages to user -->
+		<div id="message"></div>
+		
+		<div id="bidBody"></div>
+		<!-- js files loaded after all html file has been loaded -->
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="bidding.js"></script>
+	</body>
+</html>

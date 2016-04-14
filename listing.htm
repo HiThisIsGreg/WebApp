@@ -1,0 +1,131 @@
+<!-- Description: Listing Form -->
+<!-- Author: Greg Marusic -->
+<!-- Date: 10/05/2015 -->
+
+<html>
+	<head>
+		<title>Deals online</title>
+		<!-- style.css is the only main stylesheet for all pages as all pages conform to a similar theme -->
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 id="header">ShopOnline</h1>
+		<!--Navigational Menu -->
+		<!-- Has Log Out Link excluding login and registration page -->
+		<div class="nav" id="navigation">
+			<ul>
+				<li><a href="login.htm">Home</a></li>
+				<li><a href="listing.htm">Listing</a></li>
+				<li><a href="bidding.htm">Bidding</a></li>
+				<li><a href="maintenance.htm">Maintenance</a></li>
+				<li><a href="logout.htm">Log Out</a></li>
+			</ul>
+		</div>
+		<article>
+		
+		<h2>Create Listing</h2>
+		
+		<p>To create a listing enter listing details below</p>
+		<form method="post" name="listForm">
+			<fieldset>
+			<legend>Seller Details</legend>
+			<p><span class="required">*</span>Required fields</p>
+				<p>
+					<label for="item">Item Name<span class="required">*</span>:</label>
+					<input type="text" id="item" name="item"/>
+					<span id="iError" class="invalid"></span>
+				</p>
+				<p>
+					<label for="category">Category<span class="required">*</span></label>
+					<select name="category" id="category" >
+						<option value="category" selected="selected" disabled="disabled" >Category</option>
+						<option value="other">Other...</option>
+					</select><br/>
+					<input type="text" name="specialCat" id="specialCat" />
+					<label id="specialLabel" for="specialCat">Please fill in your category</label>
+					<br/>
+					<span id="cError" class="invalid"></span>
+				</p>
+				<p>
+					<label for="description">Description<span class="required">*</span></label>
+					<input type="text" name="description" id="description"/>
+					<span id="dError" class="invalid"></span>
+				</p>
+				<p>
+					<label>Starting Price:<span class="required">*</span></label>
+					<input type="text" id="sprice1" name="sprice1" />.<input type="text" id="sprice2" name="sprice2" maxlength="2"/>
+					<span id="s1Error" class="invalid"></span><span id="s2Error" class="invalid"></span>
+				</p>
+				<p>
+					<label>Reserve Price:<span class="required">*</span></label>
+					<input type="text" id="rprice1" name="rprice1" value="0" />.<input type="text" id="rprice2" name="rprice2" maxlength="2" value="0"/>
+					<span id="r1Error" class="invalid"></span><span id="r2Error" class="invalid"></span>
+				</p>
+				<p>
+					<label>Buy It Now Price:<span class="required">*</span></label>
+					<input type="text" id="bprice1" name="bprice1"/>.<input type="text" id="bprice2" name="bprice2" maxlength="2"/>
+					<span id="b1Error" class="invalid"></span><span id="b2Error" class="invalid"></span>
+				</p>
+				<p>
+					<label>Duration:<span class="required">*</span></label>
+					<select name="day" id="day">
+						<option value="day" selected="selected" disabled="disabled">Day</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						
+					</select>
+					<select name="hour" id="hour">
+						<option value="hour" selected="selected" disabled="disabled">Hour</option>
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+					</select>
+					<select name="min" id="min">
+						<option value="min" selected="selected" disabled="disabled">Min</option>
+						<option value="0">0</option>
+						<option value="15">15</option>
+						<option value="30">30</option>
+						<option value="45">45</option>
+						<option value="60">60</option>
+					</select>
+					<span id="durationError" class="invalid"></span>
+				</p>
+			<input type="button" id="listBtn" name="listBtn" class="goldBtn" value="Listing" />
+			<input type="button" id="resetBtn" name="resetBtn" class="blueBtn" value="Reset" />
+			</fieldset>
+		</form>
+		
+		<!-- Display message for form validation -->
+		<div id="message"></div>
+</article>	
+	<!-- js files loaded after all html file has been loaded -->
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="listing.js"></script>
+	</body>
+</html>

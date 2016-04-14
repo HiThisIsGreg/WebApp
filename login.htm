@@ -1,0 +1,56 @@
+<html><head>
+		<title>Deals online</title>
+		<!-- style.css is the only main stylesheet for all pages as all pages conform to a similar theme -->
+		<link href="style.css" rel="stylesheet">
+		<!-- Note: js files are at the bottom of the page --> 
+		
+	</head>
+	<body>
+
+	<header>
+		<h1 id="header">ShopOnline</h1>
+	
+		<!-- Navigational Menu -->
+		<!-- Has Log Out Link excluding login and registration page -->
+		<div class="nav" id="navigation">
+			<ul>
+				<li><a href="login.htm">Home</a></li>
+				<li><a href="listing.htm">Listing</a></li>
+				<li><a href="bidding.htm">Bidding</a></li>
+				<li><a href="maintenance.htm">Maintenance</a></li>
+			</ul>
+		</div>
+		</header>
+    <article style="
+    width: 70%;
+    margin-left: 10%;
+">
+		<h2>Welcome</h2>
+		
+		<div id="message"></div>
+		<p>Please login below or to register as a new seller or buyer <a href="register.htm">Register Here</a></p>
+		<form method="post" name="loginForm">
+			<fieldset>
+				<legend>Registration Details</legend>
+				<!-- An invalid class for span tags to display individual error messages -->
+				<!-- Input tags with invalid_field will be focused -->
+				<p><span class="required">*</span>Required fields</p>
+					<p>
+						<span class="required">*</span>
+						<label for="email">Email:</label><input type="text" name="email" id="email">
+						<span id="eError" class="invalid"></span>
+					</p>
+					<p>
+						<span class="required">*</span>
+						<label for="password">Password:</label><input type="password" name="password" id="password">
+						<span id="pError" class="invalid"></span>
+					</p>
+				<input type="button" id="loginBtn" name="loginBtn" class="goldBtn" value="Login">
+				<input type="button" id="resetBtn" name="resetBtn" class="blueBtn" value="Reset">
+			</fieldset>
+		</form>
+    </article>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="login.js"></script>
+	
+</body></html>

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("http://www.swinburne.edu.au/images/2013/background-pattern.gif");
+}
+ 
+ header{
+  background-color: rgb(69, 176, 57);
+  color: whitesmoke;
+  font: bold 14px "Open Sans",Arial,sans-serif;
+ }
+ 
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+  line-height: 50px;
+  height: 50px;
+  width: 120px;
+  border-bottom: none;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: cadetblue;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 

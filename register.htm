@@ -1,0 +1,62 @@
+<!-- Description: Register Form -->
+<!-- Author: Greg Marusic -->
+<!-- Date: 10/05/2015 -->
+<!-- Gets registration information from users , validate input and send data asynchronously to the server -->
+<html>
+	<head>
+		<title>Deals online</title>
+		<!-- style.css is the only main stylesheet for all pages as all pages conform to a similar theme -->
+		<link href="style.css" rel="stylesheet" />
+		<!-- Note: js files are at the bottom of the page --> 
+	</head>
+	<body>
+		<h1 id="header">ShopOnline</h1>
+		<!--Navigational Menu -->
+		<!-- Has Log Out Link excluding login and registration page -->
+		<div  class= "nav" id="navigation">
+			<ul>
+				<li><a href="login.htm">Home</a></li>
+				<li><a href="listing.htm">Listing</a></li>
+				<li><a href="bidding.htm">Bidding</a></li>
+				<li><a href="maintenance.htm">Maintenance</a></li>
+			</ul>
+		</div>
+		
+		<h2>Registration</h2>
+		<p>Registered? <a href="login.htm">Login Here!</a></p>
+		<!-- Display message for form validation -->
+		<div id="message"></div>
+		
+		<p>To register a new account with DealOnline please complete the registration form below</p>
+		
+		
+		<form method="post" name="registerForm">
+			<fieldset>
+				<legend>Registration Details</legend>
+				<!-- An invalid class for span tags to display individual error messages -->
+				<!-- Input tags with invalid_field will be focused -->
+				<p><span class="required">*</span>Required fields</p>
+					<p>
+						<span class="required">*</span>
+						<label for="fname">First Name:</label><input type="text" name="fname" id="fname" />
+						<span id="fError" class="invalid"></span>
+					</p>
+					<p>
+						<span class="required">*</span>
+						<label for="sname">Surname:</label><input type="text" name="sname" id="sname" />
+						<span id="sError" class="invalid"></span>
+					</p>
+					<p>
+						<span class="required">*</span>
+						<label for="email">Email:</label><input type="text" name="email" id="email" />
+						<span id="eError" class="invalid"></span>
+					</p>
+				<input type="button" id="registerBtn" name="registerBtn" class="goldBtn" value="Register"/>
+				<input type="button" id="resetBtn" name="resetBtn" class="blueBtn" value="Reset"/>
+			</fieldset>
+		</form>
+	<!-- js files loaded after all html file has been loaded -->
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="register.js"></script>
+	</body>
+</html>

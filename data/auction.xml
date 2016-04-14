@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<auctions>
+  <auction>
+    <customerID>9724605</customerID>
+    <itemID>p34624ias16psTH0en</itemID>
+    <startDate>2013-05-24</startDate>
+    <startTime>16:34:06</startTime>
+    <status>failed</status>
+    <item>Arguably</item>
+    <category>other</category>
+    <description>Book</description>
+    <startPrice>20.00</startPrice>
+    <reservePrice>25.50</reservePrice>
+    <buyPrice>300.30</buyPrice>
+    <duration>
+      <day>0</day>
+      <hour>0</hour>
+      <min>0</min>
+    </duration>
+    <bid>
+      <custID/>
+      <bidPrice>20.00</bidPrice>
+    </bid>
+  </auction>
+  <auction>
+    <customerID>9724605</customerID>
+    <itemID>556Cp1h4t3o2i4oatP</itemID>
+    <startDate>2013-05-24</startDate>
+    <startTime>16:34:55</startTime>
+    <status>sold</status>
+    <item>Potato Chips</item>
+    <category>other</category>
+    <description>Potato</description>
+    <startPrice>50.00</startPrice>
+    <reservePrice>55.50</reservePrice>
+    <buyPrice>70.30</buyPrice>
+    <duration>
+      <day>0</day>
+      <hour>1</hour>
+      <min>15</min>
+    </duration>
+    <bid>
+      <custID>9724605</custID>
+      <bidPrice>60</bidPrice>
+    </bid>
+  </auction>
+</auctions>

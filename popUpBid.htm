@@ -1,0 +1,27 @@
+<!-- Description: Place Bid Form -->
+<!-- Author: Greg Marusic -->
+<!-- Date: 10/05/2015 -->
+
+<html>
+	<head>
+		<title>Deals online</title>
+		<!-- style.css is the only main stylesheet for all pages as all pages conform to a similar theme -->
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 id="header">New Bid</h1>
+		<div id="message"></div>
+		<form method="post">
+			<p><label for="itemID">Item Number:</label><input type="text" disabled="disabled" id="itemID" value="" /></p>
+			<p>
+				<label for="bid">New Bid</label>
+				<input type="text" name="bid" id="bid" />
+				<span id="bError" class="invalid"></span>
+			</p>
+			<p><input type="button" id="newBidBtn" class="goldBtn" value="Submit" /></p>
+		</form>
+	<!-- js files loaded after all html file has been loaded -->
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="popUpBid.js"></script>
+	</body>
+</html>
